@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="petal width (cm) <= 0.8\ngini = 0.664\nsamples = 105\nvalue = [31, 37, 37]\nclass = versicolor", fillcolor="#ffffff"] ;
+1 [label="gini = 0.0\nsamples = 31\nvalue = [31, 0, 0]\nclass = setosa", fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="petal width (cm) <= 1.75\ngini = 0.5\nsamples = 74\nvalue = [0, 37, 37]\nclass = versicolor", fillcolor="#ffffff"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="petal length (cm) <= 4.95\ngini = 0.214\nsamples = 41\nvalue = [0, 36, 5]\nclass = versicolor", fillcolor="#54e992"] ;
+2 -> 3 ;
+4 [label="petal width (cm) <= 1.6\ngini = 0.056\nsamples = 35\nvalue = [0, 34, 1]\nclass = versicolor", fillcolor="#3fe685"] ;
+3 -> 4 ;
+5 [label="gini = 0.0\nsamples = 34\nvalue = [0, 34, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+4 -> 5 ;
+6 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 1]\nclass = virginica", fillcolor="#8139e5"] ;
+4 -> 6 ;
+7 [label="petal width (cm) <= 1.55\ngini = 0.444\nsamples = 6\nvalue = [0, 2, 4]\nclass = virginica", fillcolor="#c09cf2"] ;
+3 -> 7 ;
+8 [label="gini = 0.0\nsamples = 3\nvalue = [0, 0, 3]\nclass = virginica", fillcolor="#8139e5"] ;
+7 -> 8 ;
+9 [label="petal length (cm) <= 5.45\ngini = 0.444\nsamples = 3\nvalue = [0, 2, 1]\nclass = versicolor", fillcolor="#9cf2c0"] ;
+7 -> 9 ;
+10 [label="gini = 0.0\nsamples = 2\nvalue = [0, 2, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 1]\nclass = virginica", fillcolor="#8139e5"] ;
+9 -> 11 ;
+12 [label="petal length (cm) <= 4.85\ngini = 0.059\nsamples = 33\nvalue = [0, 1, 32]\nclass = virginica", fillcolor="#853fe6"] ;
+2 -> 12 ;
+13 [label="gini = 0.444\nsamples = 3\nvalue = [0, 1, 2]\nclass = virginica", fillcolor="#c09cf2"] ;
+12 -> 13 ;
+14 [label="gini = 0.0\nsamples = 30\nvalue = [0, 0, 30]\nclass = virginica", fillcolor="#8139e5"] ;
+12 -> 14 ;
+}
